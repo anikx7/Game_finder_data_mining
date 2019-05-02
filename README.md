@@ -222,14 +222,41 @@ Classification result:
 
 
 
+# Development Phase III: Recommend
+Recommner feature shows top 3 similar games based on previously selected game. Game Finder used content-based recommender system. Content-based recommender system gives highest priotiy to the customer preference. To use this feature, user will first search games by typing their desire game description. It will show three games based on user description. User can get three more similar app by selecting one game from the list. To do this challenging task, Game Finder again makes use of cosine similarities  Game Finder uses in the search feature.
+
+# Background
+TF-IDF: In the information retrieval, TF-IDF stands for term frequency-inverse document frequency. TF-IDF shows us how important a particular word. Both TF and IDF calculated separately.
+Cosine similarity: After finding TF-IDF for each document and user query, we need to calculate cosine similarity. Cosine similarity shows how similar two vectors.
+Content-based filtering: Content-based filtering recommends similar products by considering user preference. In this case, user preference will be user selected game. After selecting the user desire game, the content-based algorithm shows three more similar games based on the previously selected game.
+
+# Procedure
+Major steps for content-based recommender system are below: 
+Finding 3 games based on user query is very similar to the Search feature. 
+• Game Finder loads all documents from two .csv file and split data into title, platform, publisher, genre, players, release year, Metacritic rating, user rating, and user reviews.
+• After loading data, Game Finder removes stop words and tokenize each word. 
+• Game Finder calculates TF_IDF score for each token. 
+• After setting TF_IDF for training data, Game Finder takes user query and perform stemming and lemmatization on the user query. Game Finder also tokenizes user query and calculates TF_IDF for each token.
+• After finding all TF_IDF of training data and user query, Game Finder calculates cosine similarities between document and user query. Game Finder will show the top 3 similar games based on the user query. 
+
+After finding the search result based on cosine similarities, the user can select one game by typing game number. Game Finder uses user selected game descriptions to find three similar games from Metacritic dataset. Game finder uses content-based filtering to show three similar games. Content-based filtering is very similar to finding cosine similarities. The steps Game Finder uses are below:
+• Game finder finds TF_IDF of training data by considering games title, publisher, platform, and genre.
+• Game Finder also calculates TF_IDF of user-selected game description. Game Finder use games title, publisher, platform, and genre for user selected games.
+• After finding TF_IDF of training data and user selected game, Game Finder calculates cosine similarities and shows three more similar games based on the user-selected game.
+
+
+
+
 # How to build it
 1. Clone the whole repository
-2. Extract Example1.zip folder in the Android Application folder
+2. If you download .zip folder, extract the folder
 3. Download and install Android Studio Version 3.3
 4. Download and install Java runtime
 5. Open Android Studio
-6. Import the Example1 extracted folder.
-7. Build the project and run it
+6. Import the Game_finder_data_mining folder (Click File->New->Import Porject). Select Game_finder_data_mining folder
+7. Build the project and run it (Game Finder can be run using emulator or connecting via android phone)
+
+Or, Game Finder app can directly install in the androind phone or tablet. To install it into the androind phone, download Apk Folder in this repository. Apk Folder contain app-debug.apk file. Just click this file to install in the androind system.
 
 # Environment:
 Java Verison: java version "11.0.2" 2019-01-15 LTS
