@@ -240,9 +240,11 @@ Finding 3 games based on user query is very similar to the Search feature.
 5. After finding all TF_IDF of training data and user query, Game Finder calculates cosine similarities between document and user query. Game Finder will show the top 3 similar games based on the user query. 
 
 After finding the search result based on cosine similarities, the user can select one game by typing game number. Game Finder uses user selected game descriptions to find three similar games from Metacritic dataset. Game finder uses content-based filtering to show three similar games. Content-based filtering is very similar to finding cosine similarities. The steps Game Finder uses are below:
-6. Game finder finds TF_IDF of training data by considering games title, publisher, platform, and genre.
-7. Game Finder also calculates TF_IDF of user-selected game description. Game Finder use games title, publisher, platform, and genre for user selected games.
-8. After finding TF_IDF of training data and user selected game, Game Finder calculates cosine similarities and shows three more similar games based on the user-selected game.
+1. Game finder finds TF_IDF of training data by considering games title, publisher, platform, and genre.
+2. Game Finder also calculates TF_IDF of user-selected game description. Game Finder use games title, publisher, platform, and genre for user selected games.
+3. After finding TF_IDF of training data and user selected game, Game Finder calculates cosine similarities and shows three more similar games based on the user-selected game.
+
+# Output
 
 
 
