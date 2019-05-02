@@ -262,6 +262,11 @@ Game Finder will show three similar games.
 ![Alt text](Image/recommend4.JPG?raw=true "Title")
 
 
+# Demo Video of Game Finder
+Click the picture below to watch demo (The link will redirect you to YouTube page)
+[![GameFinder](http://img.youtube.com/vi/FEDWUL24FZc/0.jpg)](https://www.youtube.com/watch?v=FEDWUL24FZc "GameFinder")
+
+
 # How to build it
 1. Clone the whole repository
 2. If you download .zip folder, extract the folder
