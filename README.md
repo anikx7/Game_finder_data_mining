@@ -291,6 +291,7 @@ Classifier
 2. https://www.youtube.com/watch?v=psHrcSacU9Y
 
 Recommend
+
 To implement the recommender system, I used two sources, and these are:
 1. Chapter 9 from Mining of Massive Datasets (MMDS): http://infolab.stanford.edu/~ullman/mmds/ch9.pdf
 2. Online blog article: https://towardsdatascience.com/how-to-build-from-scratch-a-content-based-movie-recommender-with-natural-language-processing-25ad400eb243
