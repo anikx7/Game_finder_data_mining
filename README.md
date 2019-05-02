@@ -235,14 +235,14 @@ Major steps for content-based recommender system are below:
 Finding 3 games based on user query is very similar to the Search feature. 
 1. Game Finder loads all documents from two .csv file and split data into title, platform, publisher, genre, players, release year, Metacritic rating, user rating, and user reviews.
 2. After loading data, Game Finder removes stop words and tokenize each word. 
-• Game Finder calculates TF_IDF score for each token. 
-• After setting TF_IDF for training data, Game Finder takes user query and perform stemming and lemmatization on the user query. Game Finder also tokenizes user query and calculates TF_IDF for each token.
-• After finding all TF_IDF of training data and user query, Game Finder calculates cosine similarities between document and user query. Game Finder will show the top 3 similar games based on the user query. 
+3. Game Finder calculates TF_IDF score for each token. 
+4. After setting TF_IDF for training data, Game Finder takes user query and perform stemming and lemmatization on the user query. Game Finder also tokenizes user query and calculates TF_IDF for each token.
+5. After finding all TF_IDF of training data and user query, Game Finder calculates cosine similarities between document and user query. Game Finder will show the top 3 similar games based on the user query. 
 
 After finding the search result based on cosine similarities, the user can select one game by typing game number. Game Finder uses user selected game descriptions to find three similar games from Metacritic dataset. Game finder uses content-based filtering to show three similar games. Content-based filtering is very similar to finding cosine similarities. The steps Game Finder uses are below:
-• Game finder finds TF_IDF of training data by considering games title, publisher, platform, and genre.
-• Game Finder also calculates TF_IDF of user-selected game description. Game Finder use games title, publisher, platform, and genre for user selected games.
-• After finding TF_IDF of training data and user selected game, Game Finder calculates cosine similarities and shows three more similar games based on the user-selected game.
+6. Game finder finds TF_IDF of training data by considering games title, publisher, platform, and genre.
+7. Game Finder also calculates TF_IDF of user-selected game description. Game Finder use games title, publisher, platform, and genre for user selected games.
+8. After finding TF_IDF of training data and user selected game, Game Finder calculates cosine similarities and shows three more similar games based on the user-selected game.
 
 
 
