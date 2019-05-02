@@ -245,8 +245,21 @@ After finding the search result based on cosine similarities, the user can selec
 3. After finding TF_IDF of training data and user selected game, Game Finder calculates cosine similarities and shows three more similar games based on the user-selected game.
 
 # Output
+When user click on the Recommend button from the homescreen, it will show the following screen where user can type description of their prefered game.
 
+![Alt text](Image/recommend1.JPG?raw=true "Title")
 
+Game finder will suggest 3 games.
+
+![Alt text](Image/recommend2.JPG?raw=true "Title")
+
+User can get recommended three more similar games by typing game number.
+
+![Alt text](Image/recommend3.JPG?raw=true "Title")
+
+Game Finder will show three similar games.
+
+![Alt text](Image/recommend4.JPG?raw=true "Title")
 
 
 # How to build it
