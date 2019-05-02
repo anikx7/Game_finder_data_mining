@@ -233,8 +233,8 @@ Content-based filtering: Content-based filtering recommends similar products by 
 # Procedure
 Major steps for content-based recommender system are below: 
 Finding 3 games based on user query is very similar to the Search feature. 
-• Game Finder loads all documents from two .csv file and split data into title, platform, publisher, genre, players, release year, Metacritic rating, user rating, and user reviews.
-• After loading data, Game Finder removes stop words and tokenize each word. 
+1. Game Finder loads all documents from two .csv file and split data into title, platform, publisher, genre, players, release year, Metacritic rating, user rating, and user reviews.
+2. After loading data, Game Finder removes stop words and tokenize each word. 
 • Game Finder calculates TF_IDF score for each token. 
 • After setting TF_IDF for training data, Game Finder takes user query and perform stemming and lemmatization on the user query. Game Finder also tokenizes user query and calculates TF_IDF for each token.
 • After finding all TF_IDF of training data and user query, Game Finder calculates cosine similarities between document and user query. Game Finder will show the top 3 similar games based on the user query. 
